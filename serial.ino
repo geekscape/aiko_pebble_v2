@@ -24,6 +24,9 @@ byte serialInitialized = false;
 void serialInitialize(void) {
   Serial.begin(DEFAULT_BAUD_RATE);
 
+  pinMode(PIN_OUTPUT_1, OUTPUT);
+  pinMode(PIN_OUTPUT_2, OUTPUT);
+
   serialInitialized = true;
 }
 

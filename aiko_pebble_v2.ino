@@ -40,9 +40,6 @@ using namespace Command;
 void setup(void) {
   Serial.begin(DEFAULT_BAUD_RATE);
 
-  pinMode(PIN_OUTPUT_1,    OUTPUT);
-  pinMode(PIN_OUTPUT_2,    OUTPUT);
-
   Events.addHandler(clockHandler,         1000);
   Events.addHandler(lcdHandler,           1000);  // Aim for 100 ms
   Events.addHandler(lightHandler,         1000);  // Aim for 250 ms
